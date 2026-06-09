@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFC Quantity Takeoff Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-a: #0b1228;
+      --bg-b: #15103d;
+      --bg-c: #1b2e78;
+      --panel: rgba(15, 24, 54, 0.82);
+      --border: rgba(127, 182, 255, 0.22);
+      --text: #f4f7ff;
+      --muted: #b8c2e0;
+      --accent: #3ad4ff;
+      --accent-2: #8f5bff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(135deg, rgba(58, 212, 255, 0.08), transparent 32%),
+        linear-gradient(180deg, var(--bg-a), var(--bg-b) 56%, var(--bg-c));
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      opacity: 0.45;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero,
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      padding: 24px 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.05;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      color: #ffffff;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 18px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(143, 91, 255, 0.16);
+      border: 1px solid rgba(143, 91, 255, 0.25);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">IFC Quantity Takeoff</p>
+      <h1>Privacy Policy</h1>
+      <p>
+        IFC Quantity Takeoff is designed for local IFC quantity review, model QA and
+        early estimating support. Privacy is simple: your model files stay on your device.
+      </p>
+      <div class="meta">
+        <span class="pill">Local processing only</span>
+        <span class="pill">No account required</span>
+        <span class="pill">No analytics or tracking</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Overview</h2>
+      <p>
+        IFC Quantity Takeoff processes IFC files locally on your iPhone, iPad, or Mac.
+        No model files are uploaded to our servers. The app does not require an account
+        and does not rely on cloud services to extract quantities.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Information We Collect</h2>
+      <p>
+        We do not collect personal data through the app.
+      </p>
+      <ul>
+        <li>No account information is collected.</li>
+        <li>No model files are uploaded or transmitted by the app.</li>
+        <li>No analytics, tracking, or advertising SDKs are included.</li>
+        <li>No payment information is collected by the app.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>How IFC Files Are Processed</h2>
+      <p>
+        Imported IFC files are read and processed locally on the device for object counts,
+        material summaries, quantity extraction, data-quality review, and export.
+      </p>
+      <p>
+        Exported CSV, JSON, and summary report files are created only when the user chooses
+        to export them and are saved to a location selected by the user.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Data Sharing</h2>
+      <p>
+        We do not sell, share, or disclose app data to third parties because the app does
+        not collect user data or upload IFC files.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Data Retention</h2>
+      <p>
+        The app does not maintain a remote database of user files or personal information.
+        Recent file references may be stored locally on your device to help reopen files you
+        previously imported, subject to the permissions granted by the operating system.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Children’s Privacy</h2>
+      <p>
+        IFC Quantity Takeoff is a professional productivity tool and is not directed to children.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        If you have any privacy questions, contact:
+        <a href="mailto:jamiepward@googlemail.com">jamiepward@googlemail.com</a>
+      </p>
+    </section>
+
+    <p class="footer">Last updated: 9 June 2026</p>
+  </main>
+</body>
+</html>
