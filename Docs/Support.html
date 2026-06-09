@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFC Quantity Takeoff Support</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-a: #091224;
+      --bg-b: #171041;
+      --bg-c: #183c7f;
+      --panel: rgba(13, 21, 50, 0.82);
+      --border: rgba(110, 196, 255, 0.22);
+      --text: #f5f7ff;
+      --muted: #bcc7e4;
+      --accent: #35d5ff;
+      --accent-2: #8c5dff;
+      --ok: #4ae2a8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        linear-gradient(140deg, rgba(140, 93, 255, 0.12), transparent 28%),
+        linear-gradient(180deg, var(--bg-a), var(--bg-b) 52%, var(--bg-c));
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero,
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      padding: 24px 28px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      margin-top: 16px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(74, 226, 168, 0.22);
+      background: rgba(74, 226, 168, 0.1);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">IFC Quantity Takeoff</p>
+      <h1>Support</h1>
+      <p>
+        IFC Quantity Takeoff extracts object counts, materials, areas, volumes,
+        lengths, weights and QTO data from IFC files for early estimating support,
+        model QA, and quantity review.
+      </p>
+      <div class="badge-row">
+        <span class="badge">iPhone</span>
+        <span class="badge">iPad</span>
+        <span class="badge">macOS</span>
+        <span class="badge">Local IFC processing</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact Support</h2>
+      <p class="contact">
+        <a href="mailto:jamiepward@googlemail.com">jamiepward@googlemail.com</a>
+      </p>
+      <p>
+        For support, bug reports, or App Store review questions, please email with:
+      </p>
+      <ul>
+        <li>Your device and OS version</li>
+        <li>The app version</li>
+        <li>A short description of the issue</li>
+        <li>The IFC file size and general model type, if relevant</li>
+        <li>Screenshots or crash details where available</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What the App Does</h2>
+      <ul>
+        <li>Imports IFC files from local storage</li>
+        <li>Extracts object counts and available quantity data</li>
+        <li>Reviews materials, storeys, and quantity confidence</li>
+        <li>Exports CSV, JSON, and summary reports</li>
+        <li>Processes model files locally on device</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Important Quantity Note</h2>
+      <p>
+        Quantity extraction accuracy depends on the IFC being structured correctly,
+        with rich IFC entity information, object types, material assignments,
+        BaseQuantities, and ElementQuantity data.
+      </p>
+      <p>
+        IFC Quantity Takeoff supports quantity review and early estimating workflows,
+        but it does not replace professional QS validation.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>
+        IFC files are processed locally on your device. No model files are uploaded.
+        No account is required. No analytics, tracking, network calls, or third-party
+        SDKs are included.
+      </p>
+    </section>
+
+    <p class="footer">Last updated: 9 June 2026</p>
+  </main>
+</body>
+</html>
